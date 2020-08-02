@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>desafio 6 reserva de horas</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <form action="post">
+    <h1>Formulario de reserva de horas</h1>
+    <form class="form-register" onsubmit="return validar();">
         <h2>Rut</h2>
         <input type="text" name="rut" id="rut">
         <h2>Nombres</h2>
@@ -32,13 +34,15 @@
         <input type="date" name="fecha" id="fecha">
         <h2>Hora</h2>
         <input type="time" name="hora" id="hora">
+        <input type="submit" value="Registrar" class="btn-enviar pointer">
+        <h3 id="resultado"></h3>
     </form>
 
 
 
 
 
-    <script src="./script.js"></script>
+    <script src="./javascript.js"></script>
 
 </body>
 
